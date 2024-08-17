@@ -24,7 +24,7 @@ def load_customer_data(conn):
     try:
         cur = conn.cursor()
         print('\n\n\n',cur,'\n\n\n')
-        df = pd.read_csv(r'C:\Users\mhs52\Documents\M.sc\kafka_data_streaming\sample_data\Customer.csv') #Loading the data from "customer.csv"
+        df = pd.read_csv(r'D:\Project\real_time_data_analytics\sample_data\Customer.csv') #Loading the data from "customer.csv"
         print(df)
 
         #Iterate each rows of values in dataframe df
@@ -47,7 +47,7 @@ def load_customer_data(conn):
 def load_invoice_data(conn):
     try:
         cur = conn.cursor() 
-        df = pd.read_csv(r'C:\Users\mhs52\Documents\M.sc\kafka_data_streaming\sample_data\Invoice.csv') #Loading the data from "customer.csv"
+        df = pd.read_csv(r'D:\Project\real_time_data_analytics\sample_data\Invoice.csv') #Loading the data from "customer.csv"
         print(df)
         #Iterate each rows of values in dataframe df
         for index, value in df.iterrows():
