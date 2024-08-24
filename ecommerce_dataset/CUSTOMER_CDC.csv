@@ -1,0 +1,101 @@
+CUSTOMER_ID,CUSTOMER_UNIQUE_ID,FIRST NAME,LAST NAME,PHONE,EMAIL,CUSTOMER_ZIP_CODE_PREFIX,CUSTOMER_CITY,CUSTOMER_STATE
+06b8999e2fba1a1fbc88172c00ba8bc7,861eff4711a542e4b93843c6dd7febb0,A,Z,1,az@gmail.com,14409,franca,SP
+18955e83d337fd6b2def6b18a428ac77,290c77bc529b7ac935b93aa66c333dc3,B,Y,2,by@gmail.com,9790,sao bernardo do campo,SP
+4e7b3e00288586ebd08712fdd0374a03,060e732b5b29e8181a18229c7b0b2b5e,C,X,3,cx@gmail.com,1151,sao paulo,SP
+b2b6027bc5c5109e529d4dc6358b12c3,259dac757896d24d7702b9acbbff3f3c,D,V,4,dv@gmail.com,8775,mogi das cruzes,SP
+4f2d8ab171c80ec8364f7c12e35b23ad,345ecd01c38d18a9036ed96c73b8d066,E,U,5,eu@gmail.com,13056,campinas,SP
+879864dab9bc3047522c92c82e1212b8,4c93744516667ad3b8f1fb645a3116a4,F,T,6,ft@gmail.com,89254,jaragua do sul,SC
+fd826e7cf63160e536e0908c76c3f441,addec96d2e059c80c30fe6871d30d177,A,Z,7,az@gmail.com,4534,sao paulo,SP
+5e274e7a0c3809e14aba7ad5aae0d407,57b2a98a409812fe9618067b6b8ebe4f,B,Y,8,by@gmail.com,35182,timoteo,MG
+5adf08e34b2e993982a47070956c5c65,1175e95fb47ddff9de6b2b06188f7e0d,C,X,9,cx@gmail.com,81560,curitiba,PR
+4b7139f34592b3a31687243a302fa75b,9afe194fb833f79e300e37e580171f22,D,V,10,dv@gmail.com,30575,belo horizonte,MG
+9fb35e4ed6f0a14a4977cd9aea4042bb,2a7745e1ed516b289ed9b29c7d0539a5,E,U,11,eu@gmail.com,39400,montes claros,MG
+5aa9e4fdd4dfd20959cad2d772509598,2a46fb94aef5cbeeb850418118cee090,F,T,12,ft@gmail.com,20231,rio de janeiro,RJ
+b2d1536598b73a9abd18e0d75d92f0a3,918dc87cd72cd9f6ed4bd442ed785235,A,Z,13,az@gmail.com,18682,lencois paulista,SP
+eabebad39a88bb6f5b52376faec28612,295c05e81917928d76245e842748184d,B,Y,14,by@gmail.com,5704,sao paulo,SP
+1f1c7bf1c9b041b292af6c1c4470b753,3151a81801c8386361b62277d7fa5ecf,C,X,15,cx@gmail.com,95110,caxias do sul,RS
+206f3129c0e4d7d0b9550426023f0a08,21f748a16f4e1688a9014eb3ee6fa325,D,V,16,dv@gmail.com,13412,piracicaba,SP
+a7c125a0a07b75146167b7f04a7f8e98,5c2991dbd08bbf3cf410713c4de5a0b5,E,U,17,eu@gmail.com,22750,rio de janeiro,RJ
+c5c61596a3b6bd0cee5766992c48a9a1,b6e99561fe6f34a55b0b7da92f8ed775,F,T,18,ft@gmail.com,7124,guarulhos,SP
+9b8ce803689b3562defaad4613ef426f,7f3a72e8f988c6e735ba118d54f47458,A,Z,19,az@gmail.com,5416,sao paulo,SP
+49d0ea0986edde72da777f15456a0ee0,3e6fd6b2f0d499456a6a6820a40f2d79,B,Y,20,by@gmail.com,68485,pacaja,PA
+154c4ded6991bdfa3cd249d11abf4130,e607ede0e63436308660236f5a52da5e,C,X,21,cx@gmail.com,88034,florianopolis,SC
+690172ab319622688d3b4df42f676898,a96d5cfa0d3181817e2b946f921ea021,D,V,22,dv@gmail.com,74914,aparecida de goiania,GO
+2938121a40a20953c43caa8c98787fcb,482441ea6a06b1f72fe9784756c0ea75,E,U,23,eu@gmail.com,5713,sao paulo,SP
+237098a64674ae89babdc426746260fc,4390ddbb6276a66ff1736a6710205dca,F,T,24,ft@gmail.com,82820,curitiba,PR
+cb721d7b4f271fd87011c4c83462c076,a5844ba4bfc8d0cc61d13027c7e63bcc,A,Z,25,az@gmail.com,8225,sao paulo,SP
+f681356046d9fde60e70c73a18d65ea2,5f102dd37243f152aec3607970aad100,B,Y,26,by@gmail.com,9121,santo andre,SP
+167bd30a409e3e4127df5a9408ebd394,9c0096673baf55453a50073f12d1a37f,C,X,27,cx@gmail.com,74310,goiania,GO
+6e359a57a91f84095cc64e1b351aef8c,2e6a42a9b5cbb0da62988694f18ee295,D,V,28,dv@gmail.com,4571,sao paulo,SP
+e0eea8f69a457b3f1fa246e44c9ebefd,4d221875624017bc47b4d1ce7314a5b7,E,U,29,eu@gmail.com,29311,cachoeiro de itapemirim,ES
+e3109970a3fe8021d5ff82c577ce5606,a8654e2af5da6bb72f52c22b164855e1,F,T,30,ft@gmail.com,5528,sao paulo,SP
+261cb4f92498ca05d5bd1a327a261d9c,424aca6872c5bab80780a8dec03b7516,A,Z,31,az@gmail.com,12235,sao jose dos campos,SP
+6f92779347724b67e44e3224f3b4cffd,bf4862777db128507e9efcc789215e9b,B,Y,32,by@gmail.com,18130,sao roque,SP
+2d5831cb2dff7cdefba62e950ae3dc7b,e9dd12dca17352644a959d9dea133935,C,X,33,cx@gmail.com,42800,camacari,BA
+b2bed119388167a954382cca36c4777f,e079b18794454de9d2be5c12b4392294,D,V,34,dv@gmail.com,27525,resende,RJ
+469634941c27cd844170935a3cf60b95,ef07ba9aa5226f77264ffa5762b2280b,E,U,35,eu@gmail.com,81750,curitiba,PR
+df0aa5b8586495e0ddf6b601122e43a1,85d234692f7bee8d6fea586e237334b6,F,T,36,ft@gmail.com,13175,sumare,SP
+41c8f4b570869791379a925899a6af8a,fe3634ccefbcdb0537b45fd589e32e8e,A,Z,37,az@gmail.com,7170,guarulhos,SP
+54f755c3fd2709231f9964a1430c5218,40febde16f4718a5def537786473b0be,B,Y,38,by@gmail.com,93415,novo hamburgo,RS
+4c06b42fbf7b97ab10779cda5549cd1c,07d190f123147d9e89d4b922543d7948,C,X,39,cx@gmail.com,65075,sao luis,MA
+b6368ca0f56d4632f44d58ca431487b2,dd992305cba295d997f263dbdf4e8c2e,D,V,40,dv@gmail.com,88104,sao jose,SC
+4a0e66fd30684aa1409cd1b66fec77cc,86085586aaa8c5f47ed0b400da64c59d,E,U,41,eu@gmail.com,7176,guarulhos,SP
+c168abb9077b7821adae01dc1f0886c5,5ad58a4e6a1a656b6bed070cadbaa003,F,T,42,ft@gmail.com,35960,santa barbara,MG
+a3b0fda37bae14cf754877bed475e80c,c9158d089637ab443c78984d20da7fc0,A,Z,43,az@gmail.com,5727,sao paulo,SP
+0ccd415657ae8a6cd1c71b00155a019e,66cc90195ca44cc7ac6a1cd0e1e1e7b2,B,Y,44,by@gmail.com,7053,guarulhos,SP
+c532a74a3ebf1bacce2e2bcce3783317,91ec50a00ae74d0a229d2efdf4344e1e,C,X,45,cx@gmail.com,14026,ribeirao preto,SP
+19cecb194f54e614b70d971306a9931b,d251c190ca75786e9ab937982d60d1d4,D,V,46,dv@gmail.com,30320,belo horizonte,MG
+f34a6e874087ec1f0e3dab9fdf659c5d,233896de79986082f1f479f1f85281cb,E,U,47,eu@gmail.com,38300,ituiutaba,MG
+c132855c926907970dcf6f2bf0b33a24,a8ae36a2bb6c2bbc3b5d62ede131c9ef,F,T,48,ft@gmail.com,18740,taquarituba,SP
+df85b96ba2ce3e49bde101b1614f52ac,8d46223c91cbeb93e0930ca8bd8ffca2,A,Z,49,az@gmail.com,83085,sao jose dos pinhais,PR
+4d27341acd30a36bca39008ee9bb9050,e021e698833bdeb89dfef3acb2e91f37,B,Y,50,by@gmail.com,89254,jaragua do sul,SC
+d3b6830d18c7de943d1e707d1f061d40,27cf4b153010911a0957150255a6c6db,C,X,51,cx@gmail.com,5351,sao paulo,SP
+79de53946db384e2d7a9bd131792ad17,7ce5b57a120a2da6a804afa58ffcbfb5,D,V,52,dv@gmail.com,39406,montes claros,MG
+a562ab1e728449e3461829dfe2e36f73,d33eeadf54cb883e79be640f38c32cdc,E,U,53,eu@gmail.com,14860,barrinha,SP
+b64ed91eab98972150bdaf77ca921934,3da7750bf3c1dbd724624a60a9f5942b,F,T,54,ft@gmail.com,21310,rio de janeiro,RJ
+8247b5583327ab8be19f96e1fb82f77b,d85547cd859833520b311b4458a14c1c,A,Z,55,az@gmail.com,23970,parati,RJ
+8fcaa9368903f3a9a28aeaff28c14638,3af0b2f7654f613ff1527b997a2ac57e,B,Y,56,by@gmail.com,79804,dourados,MS
+a9b0d1c26105279e1b8edc63d06bd668,3d49f4455a3947c8dd7e972b3ad8cb76,C,X,57,cx@gmail.com,5017,sao paulo,SP
+aa9f03ecd3728c9bd12e6d962c66c7cb,b03e9d9818ee170e9d6b983803c7d406,D,V,58,dv@gmail.com,75388,trindade,GO
+230c0d740401730c7197d16376893525,a302a693d5722d95984e6472150b9391,E,U,59,eu@gmail.com,85808,cascavel,PR
+a905baa530258422594f1b05615bd225,c80da60feddb7cf8325bd104032e314a,F,T,60,ft@gmail.com,60140,fortaleza,CE
+4fa19f7da692e6bf9602aaad3c372eda,a2b8841410cf77619574d311cd06fd5e,A,Z,61,az@gmail.com,72270,brasilia,DF
+03f846ad03437d864a8d2a22976dcafe,7677c213007e9a6ec9267ea50b5ce5bc,B,Y,62,by@gmail.com,2075,sao paulo,SP
+de4e13fd7d6469c5ada77d0843c55e42,0c17f9ac28cbd7323f0f4043e9db5907,C,X,63,cx@gmail.com,96015,pelotas,RS
+8276de07ef25225d412b8462d73f8664,332cf4e83e16004ba7dca932ce82475b,D,V,64,dv@gmail.com,90010,porto alegre,RS
+cc32707d2e2f7c92ab449f9b28154809,0d516ca029d6a28d5cfddd80b27a26dc,E,U,65,eu@gmail.com,22440,rio de janeiro,RJ
+a02f66c3af7b16eec19ddcd98b645fe3,b3548d0cec408ae13d143bb4eeebaa6c,F,T,66,ft@gmail.com,13323,salto,SP
+26acee41e2f75689a5615892f06ea0bd,c3293e875ffb1116018edf76d24e52a2,A,Z,67,az@gmail.com,30190,belo horizonte,MG
+f64cdee66599119324ce57a97e43700d,d89e05e2d23c3d8247aeecd07758004b,B,Y,68,by@gmail.com,13212,jundiai,SP
+7ab7a537b678b6dd73d825ff6ee7be9d,dad5018ffc0de85eb72f72575b552784,C,X,69,cx@gmail.com,29307,cachoeiro de itapemirim,ES
+7300450cedf7e4c35c243c4a03c1e8a6,95700615deef776ed32faa08f0be634e,D,V,70,dv@gmail.com,12280,cacapava,SP
+4c7241af24b5344cb01fe687643de4fe,b157c176c3fe04914fde33f2dc8b878a,E,U,71,eu@gmail.com,60336,fortaleza,CE
+97e126f19a6f04b3462619f36862bcd2,d4397835ae287e492b186d497099439a,F,T,72,ft@gmail.com,11310,sao vicente,SP
+6d27a9361e591da38c87a5e70253f3f2,76b029c87118a29f2e3de420f5ec2fa2,A,Z,73,az@gmail.com,38408,uberlandia,MG
+6810c3dc47f641181fcc7f73275c3d19,7eaa86786b5955ab188db287f4726d79,B,Y,74,by@gmail.com,37720,botelhos,MG
+b514422efcf14bef34858a0829bef189,b436a108536c1dabbc1d3e808d782df9,C,X,75,cx@gmail.com,24431,sao goncalo,RJ
+0aae2862f8eac77f10a34f44860720ac,cd076285a12f40041b32f5ad8c98699f,D,V,76,dv@gmail.com,5890,sao paulo,SP
+6c9a5923526346cbc0bd7bbd92269c01,cf6d4152d758efc43910e0141ae5b912,E,U,77,eu@gmail.com,3733,sao paulo,SP
+1b2cb35b19b40b61f953d32ea157b337,468d559ef2dcd2bea6d8db78959fb90f,F,T,78,ft@gmail.com,83709,araucaria,PR
+12d1b4294fef21016c9614eb31e55e15,7556f182460418cf30957e6ce377c674,A,Z,79,az@gmail.com,11347,sao vicente,SP
+f6529ffebe6b3440d45d89604a4239ac,e5dbefdfdf3eff75c8e6cd655f128279,B,Y,80,by@gmail.com,26272,nova iguacu,RJ
+8264e3518163dd09211870b24a5d741d,67d21c8bea9d6017d1b124d3879dd815,C,X,81,cx@gmail.com,5415,sao paulo,SP
+8392e3d4cfeec63f2a8bfea68bf1f91f,fd2d5fdb84e65fa6b54b98b0e2df5645,D,V,82,dv@gmail.com,59655,areia branca,RN
+38d1cd89306128348ffdf4cc23f3a50a,d491a65a6ef3c04e145d37395996bad7,E,U,83,eu@gmail.com,4548,sao paulo,SP
+91ec76836092bba85d11761078ed7bb5,6edd17d0a29e2d4057e694afee5eaa3b,F,T,84,ft@gmail.com,28010,campos dos goytacazes,RJ
+f9dfa0a2934ffbb22e66924952548be8,bf6e263ffc1f89999827615522b0aa45,A,Z,85,az@gmail.com,13573,sao carlos,SP
+5a3260cfde2a918b597dada7ddd247bb,6d3f61e35d0422fd8cae65b1798784be,B,Y,86,by@gmail.com,2175,sao paulo,SP
+ee3a81b2771fec5f9e982cdb1b3a4804,a9a77b4e25980b7ca58cb71f878abb27,C,X,87,cx@gmail.com,37500,itajuba,MG
+784c407781aa34749a388c9283782b56,eca666aec08df69fe31aa9a11d4a3302,D,V,88,dv@gmail.com,90670,porto alegre,RS
+3f6ede29d4c69cd3316d2035b6cec1fb,7a380cb5434e6b6b5b37d45bb99dbe8a,E,U,89,eu@gmail.com,9890,sao bernardo do campo,SP
+6bed27564bd99d78d09c1fac13da56fd,463093247faa080167d77f2e6d1b297d,F,T,90,ft@gmail.com,13321,salto,SP
+670254dd2e886ffe621b3831afb47d7d,914b142462685e3161cf3a9f4152a028,A,Z,91,az@gmail.com,44380,cruz das almas,BA
+f7cb015ff73be957ee6a30e2577742c5,e235442a956c524e6c141141171f5801,B,Y,92,by@gmail.com,27700,vassouras,RJ
+ea2196dc456ba36fe4f6b81dca4867d4,4a4de987b37555970ffcc9608d858a72,C,X,93,cx@gmail.com,44033,feira de santana,BA
+09241c552e9fe2420997a6c535e9d408,44e9a1246448bd68a2e3bf0f1966c57a,D,V,94,dv@gmail.com,4537,sao paulo,SP
+e50a30de3c32f9406a7185f40ce6874d,b4d6e1b900d99b52e901860bc1f44e35,E,U,95,eu@gmail.com,71540,brasilia,DF
+f89c1a6b9c966869e441e55bc14acddc,809353196a0456095716566dd226bb48,F,T,96,ft@gmail.com,13569,sao carlos,SP
+23e96758fd640560e9b1fbcda90abfc4,9e1f719fe5b17b9c51905fee6d6385c1,A,Z,97,az@gmail.com,5565,sao paulo,SP
+369708cabd9831ea6fde670a3b602a92,94b731a41867b47c3856e324840c4c99,B,Y,98,by@gmail.com,3636,sao paulo,SP
+5f8b4882b5a4ec7bf6d2107e6cd0cf29,694cb45ff29b603ac2acd51016770097,C,X,99,cx@gmail.com,24120,niteroi,RJ
+ad6891a1937cb8723a2c08ba1ae59873,9dbb05f5577e862337b93feb8f358839,D,V,100,dv@gmail.com,65058,sao luis,MA

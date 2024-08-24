@@ -48,18 +48,18 @@ def ingestion(values, conn):
         # Also creating variables for target location, such as database name, schema cname and table name.
         # database name and schema names are already pushed to envirnmental variable for security purposes. 
         # defining del_or_not variable to identify the message is to delete the record in snowflake or to other transaction in snowflake
-        customerid = values['customerid']
-        firstname = values['firstname']
-        lastname = values['lastname']
-        company = values['company']
-        address = values['address']
-        city = values['city']
-        state = values['state']
-        country = values['country']
-        postalcode = values['postalcode']
-        phone = values['phone']
-        fax = values['fax']
-        email = values['email']
+        customerid = values['CustomerId']
+        firstname = values['FirstName']
+        lastname = values['LastName']
+        company = values['Company']
+        address = values['Address']
+        city = values['City']
+        state = values['State']
+        country = values['Country']
+        postalcode = values['PostalCode']
+        phone = values['Phone']
+        fax = values['Fax']
+        email = values['Email']
         del_or_not = values['__deleted']
         target_database = "ECOMMERCE_DB"
         target_schema = "KAFKA"
@@ -84,7 +84,34 @@ def ingestion(values, conn):
             cursor.execute(update_query)
             print(f"Record {customerid} has been updated successfully.")
         elif result == 0 and del_or_not == 'false':
-            insert_query = f"INSERT INTO {target_database}.{target_schema}.{target_table} (CUSTOMERID, FIRSTNAME, LASTNAME, COMPANY, ADDRESS, CITY, STATE, COUNTRY, POSTALCODE, PHONE, FAX, EMAIL) VALUES ('{customerid}', '{firstname}', '{lastname}', '{company}', '{address}', '{city}', '{state}', '{country}', '{postalcode}', '{phone}', '{fax}', '{email}')"
+            insert_query = f"""INSERT INTO {target_database}.{target_schema}.{target_table} 
+                                ("CustomerId",
+                                "FirstName",
+                                "LastName",
+                                "Company",
+                                "Address",
+                                "City",
+                                "State",
+                                "Country",
+                                "PostalCode",
+                                "Phone",
+                                "Fax",
+                                "Email") 
+                            VALUES 
+                                (
+                                {customerid},
+                                '{firstname}',
+                                '{lastname}',
+                                '{company}',
+                                '{address}',
+                                '{city}',
+                                '{state}',
+                                '{country}',
+                                '{postalcode}',
+                                '{phone}',
+                                '{fax}',
+                                '{email}'
+                                )"""
             cursor.execute(insert_query)
             print(f"Record {customerid} has been inserted successfully.")
         conn.commit()
