@@ -32,9 +32,6 @@ def load_customer_orders(conn):
     try:
         cur = conn.cursor()
         df = pd.read_csv(r'D:\Project\real_time_data_analytics\ecommerce_dataset\Customer_Orders.csv') #Loading the data from "customer.csv"
-        
-        # Print the first few rows to verify the structure
-        print(df.head())
 
         #Iterate each rows of values in dataframe df
         for index, value in df.iterrows():
@@ -70,9 +67,6 @@ def load_customer_purchases(conn):
         cur = conn.cursor()
         df = pd.read_csv(r'D:\Project\real_time_data_analytics\ecommerce_dataset\Customer_Purchases.csv') #Loading the data from "customer.csv"
         
-        # Print the first few rows to verify the structure
-        print(df.head())
-
         #Iterate each rows of values in dataframe df
         for index, value in df.iterrows():
             #PostgreSQL query to insert row values (genreid and genrename) into the table "genre"
@@ -107,9 +101,6 @@ def load_Inventory_management(conn):
         cur = conn.cursor()
         df = pd.read_csv(r'D:\Project\real_time_data_analytics\ecommerce_dataset\Inventory_Management.csv') #Loading the data from "customer.csv"
         
-        # Print the first few rows to verify the structure
-        print(df.head())
-
         #Iterate each rows of values in dataframe df
         for index, value in df.iterrows():
             #PostgreSQL query to insert row values (genreid and genrename) into the table "genre"
@@ -152,16 +143,16 @@ def load_product_categories(conn):
             #PostgreSQL query to insert row values (genreid and genrename) into the table "genre"
             query = """
                         INSERT INTO kafka.product_categories(
+                            product_id,
                             category_id,
                             category_name,
                             subcategory_name,
-                            product_id,
                             product_price,
                             discount,
                             availability_status
                             ) 
                         VALUES (
-                            %s, %s, %s, %s, %s, %s, %s)
+                            %s, %s, %s, %s, %s, %s, %s) 
                     """
             cur.execute(query, tuple(value))
 
@@ -171,17 +162,13 @@ def load_product_categories(conn):
         
     except Exception as e:
         print("Error loading :", e)
-
-
+    
 # Load Social Media Interactions data into the database
 def load_Social_Media_Interactions(conn):
     print("Loading Social_Media_Interactions...")
     try:
         cur = conn.cursor()
         df = pd.read_csv(r'D:\Project\real_time_data_analytics\ecommerce_dataset\Social_Media_Interactions.csv') #Loading the data from "customer.csv"
-        
-        # Print the first few rows to verify the structure
-        print(df.head())
 
         #Iterate each rows of values in dataframe df
         for index, value in df.iterrows():
@@ -215,15 +202,12 @@ def load_Website_Activity(conn):
     try:
         cur = conn.cursor()
         df = pd.read_csv(r'D:\Project\real_time_data_analytics\ecommerce_dataset\Website_Activity.csv') #Loading the data from "customer.csv"
-        
-        # Print the first few rows to verify the structure
-        print(df.head())
 
         #Iterate each rows of values in dataframe df
         for index, value in df.iterrows():
             #PostgreSQL query to insert row values (genreid and genrename) into the table "genre"
             query = """
-                        INSERT INTO kafka.Website_Activity(
+                        INSERT INTO kafka.website_activity(
                             activity_id,
                             customer_id,
                             page_visited,
@@ -235,7 +219,7 @@ def load_Website_Activity(conn):
                             time_spent
                             ) 
                         VALUES (
-                            %s, %s, %s, %s, %s, %s, %s,%s)
+                            %s, %s, %s, %s, %s, %s, %s,%s,%s)
                     """
             cur.execute(query, tuple(value))
 

@@ -111,6 +111,288 @@ def ingestion(values, conn):
     except sfc.Error as e: 
         print(f"Error: {e}")
 
+
+def ingestion_customer_orders(values, conn):
+    cursor = conn.cursor()
+
+    try:
+        order_id = values['ORDER_ID']
+        customer_id = values['CUSTOMER_ID']
+        order_date = values['ORDER_DATE']
+        total_amount = values['TOTAL_AMOUNT']
+        shipping_fee = values['SHIPPING_FEE']
+        payment_status = values['PAYMENT_STATUS']
+        delivery_date = values['DELIVERY_DATE']
+        order_status = values['ORDER_STATUS']
+
+        target_database = "ECOMMERCE"
+        target_schema = "KAFKA"
+        target_table = "CUSTOMER_ORDERS"
+
+        insert_query = f"""INSERT INTO {target_database}.{target_schema}.{target_table} 
+                            (
+                            ORDER_ID,
+                            CUSTOMER_ID,
+                            ORDER_DATE,
+                            TOTAL_AMOUNT,
+                            SHIPPING_FEE,
+                            PAYMENT_STATUS,
+                            DELIVERY_DATE,
+                            ORDER_STATUS
+                            ) 
+                        VALUES 
+                            (
+                            {order_id},
+                            {customer_id},
+                            '{order_date}',
+                            {total_amount},
+                            {shipping_fee},
+                            '{payment_status}',
+                            '{delivery_date}',
+                            '{order_status}'
+                            )"""
+        cursor.execute(insert_query)
+        print(f"Record {order_id} has been inserted successfully.")
+        conn.commit()
+    except sfc.Error as e:
+        print(f"Error: {e}")
+
+
+def ingestion_customer_purchases(values, conn):
+    cursor = conn.cursor()
+
+    try:
+        purchase_id = values['PURCHASE_ID']
+        customer_id = values['CUSTOMER_ID']
+        product_id = values['PRODUCT_ID']
+        purchase_date = values['PURCHASE_DATE']
+        purchase_amount = values['PURCHASE_AMOUNT']
+        quantity = values['QUANTITY']
+        payment_method = values['PAYMENT_METHOD']
+        shipping_address = values['SHIPPING_ADDRESS']
+        purchase_status = values['PURCHASE_STATUS']
+
+        target_database = "ECOMMERCE"
+        target_schema = "KAFKA"
+        target_table = "CUSTOMER_PURCHASES"
+
+        insert_query = f"""INSERT INTO {target_database}.{target_schema}.{target_table} 
+                            (
+                            PURCHASE_ID,
+                            CUSTOMER_ID,
+                            PRODUCT_ID,
+                            PURCHASE_DATE,
+                            PURCHASE_AMOUNT,
+                            QUANTITY,
+                            PAYMENT_METHOD,
+                            SHIPPING_ADDRESS,
+                            PURCHASE_STATUS
+                            ) 
+                        VALUES 
+                            (
+                            {purchase_id},
+                            {customer_id},
+                            {product_id},
+                            '{purchase_date}',
+                            {purchase_amount},
+                            {quantity},
+                            '{payment_method}',
+                            '{shipping_address}',
+                            '{purchase_status}'
+                            )"""
+        cursor.execute(insert_query)
+        print(f"Record {purchase_id} has been inserted successfully.")
+        conn.commit()
+    except sfc.Error as e:
+        print(f"Error: {e}")
+
+def ingestion_product_categories(values, conn):
+    cursor = conn.cursor()
+
+    try:
+        category_id = values['CATEGORY_ID']
+        category_name = values['CATEGORY_NAME']
+        subcategory_name = values['SUBCATEGORY_NAME']
+        product_id = values['PRODUCT_ID']
+        product_price = values['PRODUCT_PRICE']
+        discount = values['DISCOUNT']
+        availability_status = values['AVAILABILITY_STATUS']
+
+        target_database = "ECOMMERCE"
+        target_schema = "KAFKA"
+        target_table = "PRODUCT_CATEGORIES"
+
+        insert_query = f"""INSERT INTO {target_database}.{target_schema}.{target_table} 
+                            (
+                            CATEGORY_ID,
+                            CATEGORY_NAME,
+                            SUBCATEGORY_NAME,
+                            PRODUCT_ID,
+                            PRODUCT_PRICE,
+                            DISCOUNT,
+                            AVAILABILITY_STATUS
+                            ) 
+                        VALUES 
+                            (
+                            {category_id},
+                            '{category_name}',
+                            '{subcategory_name}',
+                            {product_id},
+                            {product_price},
+                            {discount},
+                            '{availability_status}'
+                            )"""
+        cursor.execute(insert_query)
+        print(f"Record {product_id} has been inserted successfully.")
+        conn.commit()
+    except sfc.Error as e:
+        print(f"Error: {e}")
+
+def ingestion_inventory_management(values, conn):
+    cursor = conn.cursor()
+
+    try:
+        inventory_id = values['INVENTORY_ID']
+        product_id = values['PRODUCT_ID']
+        stock_available = values['STOCK_AVAILABLE']
+        stock_ordered = values['STOCK_ORDERED']
+        stock_sold = values['STOCK_SOLD']
+        last_restock_date = values['LAST_RESTOCK_DATE']
+        supplier_id = values['SUPPLIER_ID']
+        warehouse_location = values['WAREHOUSE_LOCATION']
+        stock_threshold = values['STOCK_THRESHOLD']
+
+        target_database = "ECOMMERCE"
+        target_schema = "KAFKA"
+        target_table = "INVENTORY_MANAGEMENT"
+
+        insert_query = f"""INSERT INTO {target_database}.{target_schema}.{target_table} 
+                            (
+                            INVENTORY_ID,
+                            PRODUCT_ID,
+                            STOCK_AVAILABLE,
+                            STOCK_ORDERED,
+                            STOCK_SOLD,
+                            LAST_RESTOCK_DATE,
+                            SUPPLIER_ID,
+                            WAREHOUSE_LOCATION,
+                            STOCK_THRESHOLD
+                            ) 
+                        VALUES 
+                            (
+                            {inventory_id},
+                            {product_id},
+                            {stock_available},
+                            {stock_ordered},
+                            {stock_sold},
+                            '{last_restock_date}',
+                            {supplier_id},
+                            '{warehouse_location}',
+                            {stock_threshold}
+                            )"""
+        cursor.execute(insert_query)
+        print(f"Record {inventory_id} has been inserted successfully.")
+        conn.commit()
+    except sfc.Error as e:
+        print(f"Error: {e}")
+
+
+def ingestion_social_media_interactions(values, conn):
+    cursor = conn.cursor()
+
+    try:
+        interaction_id = values['INTERACTION_ID']
+        customer_id = values['CUSTOMER_ID']
+        social_media_platform = values['SOCIAL_MEDIA_PLATFORM']
+        post_id = values['POST_ID']
+        interaction_type = values['INTERACTION_TYPE']
+        interaction_date = values['INTERACTION_DATE']
+        sentiment_score = values['SENTIMENT_SCORE']
+        engagement_score = values['ENGAGEMENT_SCORE']
+
+        target_database = "ECOMMERCE"
+        target_schema = "KAFKA"
+        target_table = "SOCIAL_MEDIA_INTERACTIONS"
+
+        insert_query = f"""INSERT INTO {target_database}.{target_schema}.{target_table} 
+                            (
+                            INTERACTION_ID,
+                            CUSTOMER_ID,
+                            SOCIAL_MEDIA_PLATFORM,
+                            POST_ID,
+                            INTERACTION_TYPE,
+                            INTERACTION_DATE,
+                            SENTIMENT_SCORE,
+                            ENGAGEMENT_SCORE
+                            ) 
+                        VALUES 
+                            (
+                            {interaction_id},
+                            {customer_id},
+                            '{social_media_platform}',
+                            '{post_id}',
+                            '{interaction_type}',
+                            '{interaction_date}',
+                            {sentiment_score},
+                            {engagement_score}
+                            )"""
+        cursor.execute(insert_query)
+        print(f"Record {interaction_id} has been inserted successfully.")
+        conn.commit()
+    except sfc.Error as e:
+        print(f"Error: {e}")
+
+
+def ingestion_website_activity(values, conn):
+    cursor = conn.cursor()
+
+    try:
+        activity_id = values['ACTIVITY_ID']
+        customer_id = values['CUSTOMER_ID']
+        page_visited = values['PAGE_VISITED']
+        visit_timestamp = values['VISIT_TIMESTAMP']
+        session_id = values['SESSION_ID']
+        referrer_source = values['REFERRER_SOURCE']
+        device_type = values['DEVICE_TYPE']
+        browser_type = values['BROWSER_TYPE']
+        time_spent = values['TIME_SPENT']
+
+        target_database = "ECOMMERCE"
+        target_schema = "KAFKA"
+        target_table = "WEBSITE_ACTIVITY"
+
+        insert_query = f"""INSERT INTO {target_database}.{target_schema}.{target_table} 
+                            (
+                            ACTIVITY_ID,
+                            CUSTOMER_ID,
+                            PAGE_VISITED,
+                            VISIT_TIMESTAMP,
+                            SESSION_ID,
+                            REFERRER_SOURCE,
+                            DEVICE_TYPE,
+                            BROWSER_TYPE,
+                            TIME_SPENT
+                            ) 
+                        VALUES 
+                            (
+                            {activity_id},
+                            {customer_id},
+                            '{page_visited}',
+                            '{visit_timestamp}',
+                            '{session_id}',
+                            '{referrer_source}',
+                            '{device_type}',
+                            '{browser_type}',
+                            {time_spent}
+                            )"""
+        cursor.execute(insert_query)
+        print(f"Record {activity_id} has been inserted successfully.")
+        conn.commit()
+    except sfc.Error as e:
+        print(f"Error: {e}")
+
+
+
 def initiate_kafka(conn):
     print(consumer.topics())
 
